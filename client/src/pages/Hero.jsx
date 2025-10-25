@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <>
       <div 
-        className='w-full h-[2100px] bg-repeat mt-[-73px] bg-cover bg-center'
+        className='w-full h-[2500px] bg-repeat mt-[-73px] bg-cover bg-center'
         style={{ backgroundImage: `url(${heroImg})` }}
       >
 <div className="w-full  flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-20">
@@ -48,7 +48,7 @@ const Hero = () => {
 </div>
 
 {/* Review Card */}
-<div className="border ml-10 w-[400px] border-gray-400 rounded-2xl mt-6 backdrop-blur-sm bg-white/5">
+<div className="border ml-10 w-[350px] border-gray-400 rounded-2xl mt-6 backdrop-blur-sm bg-white/5">
   <div className="flex gap-3 p-5  items-center">
     <img className="w-16 h-16 rounded-full" src={s1} alt="User" />
     <div>
