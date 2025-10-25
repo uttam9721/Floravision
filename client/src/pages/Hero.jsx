@@ -66,7 +66,7 @@ Live Demo...</p>
     <img className="w-[260px] -mt-20" src={a1} alt="Aglaonema plant" />
     <div className="text-start mt-2">
       <h3 className="text-white text-lg">Indoor Plant</h3>
-      <h1 className="text-white text-xl font-bold mb-2">Aglaonema Plant</h1>
+      <h1 className="text-white text-xl font-bold mb-2">Aglaonema Plant         > </h1>
       <button className="text-white border border-white px-6 py-2 rounded-lg">
         Buy Now
       </button>
