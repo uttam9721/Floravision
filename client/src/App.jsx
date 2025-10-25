@@ -9,12 +9,12 @@ import Crausel from './pages/Crausel';
 const App = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
       <Cart />
       <Crausel />
       <Footer />
-      {/* <h1 className='text-2xl'>App </h1> */}
+
     </div>
   )
 }

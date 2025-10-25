@@ -1,12 +1,12 @@
 import React from 'react'
 import heroImg from '../assets/Hero.png'
 import hcart from '../assets/Hcart.png'
-import Navbar from './../components/Navbar';
+// import Navbar from './../components/Navbar';
 
 const Hero = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div 
         className='w-full h-screen bg-repeat mt-[-73px] bg-cover bg-center'
         style={{ backgroundImage: `url(${heroImg})` }}
