@@ -34,7 +34,7 @@ const Hero = () => {
   </div>
 
   {/* Right Section (Product Card) */}
-  <div className="border bg-[#1B2213] border-gray-500 rounded-2xl p-4 flex flex-col items-center shadow-[0_4px_20px_rgba(0,0,0,0.3)] mt-20">
+  {/* <div className="border bg-[#1B2213] border-gray-500 rounded-2xl p-4 flex flex-col items-center shadow-[0_4px_20px_rgba(0,0,0,0.3)] mt-20">
     <img className="w-[260px] -mt-20" src={a1} alt="Aglaonema plant" />
     <div className="text-start mt-2">
       <h3 className="text-white text-lg">Indoor Plant</h3>
@@ -56,7 +56,39 @@ const Hero = () => {
    
   </div>
    <p className=' p-5 text-[#C9CAC7] w-[350px]'>I can't express how thrilled I am with my new natural plants! They bring such a fresh and vibrant energy to my home.</p>
+</div> */}
+
+
+{/* Card 1 */}
+<div className="border bg-[#1B2213] border-gray-500 rounded-2xl p-4 flex flex-col items-center shadow-[0_4px_20px_rgba(0,0,0,0.3)] mt-20 sm:mt-10">
+  <img className="w-[260px] -mt-20 sm:-mt-10" src={a1} alt="Aglaonema plant" />
+  <div className="text-start mt-2">
+    <h3 className="text-white text-lg">Indoor Plant</h3>
+    <h1 className="text-white text-xl font-bold mb-2">Aglaonema Plant &gt;</h1>
+    <button className="text-white border border-white px-6 py-2 rounded-lg">
+      Buy Now
+    </button>
+  </div>
 </div>
+
+{/* Card 2 */}
+<div className='border w-[400px] sm:w-full mt-10 sm:mt-5 mx-auto border-gray-400 rounded-2xl'>
+  <div className='flex gap-3 p-5 items-center'>
+    <img className='w-22 h-22 rounded-full' src={s1} alt="" />
+    <div>
+      <h1 className='text-white text-2xl sm:text-lg'>Ronnie Hamill</h1>
+      <p className="text-yellow-400 text-sm">★★★★★</p>
+    </div>
+  </div>
+  <p className='p-5 text-[#C9CAC7] w-[350px] sm:w-full'>
+    I can't express how thrilled I am with my new natural plants! They bring such a fresh and vibrant energy to my home.
+  </p>
+</div>
+
+
+
+
+
         <div className='mt-20 gap-[30px]'>
   <h1 className='text-center mb-20 text-white text-2xl font-bold'>Our Trendy plants</h1>
 
