@@ -1,5 +1,7 @@
 import React from 'react'
 import l1 from '../assets/logo.png'
+import s1 from '../assets/search.png'
+import c1 from '../assets/cart.png'
 
 const Navbar = () => {
   return (
@@ -22,11 +24,15 @@ const Navbar = () => {
           </ol>
         </div>
 
-        {/* Right Section */}
+        
         <div className="w-full md:w-auto mt-3 md:mt-0">
-          <ol className="flex justify-center md:justify-end gap-3 text-sm sm:text-base">
-            <li className="text-gray-400 font-bold">Search</li>
-            <li className="text-gray-400 font-bold">Search</li>
+          <ol className="flex justify-center md:justify-end  text-sm sm:text-base gap-7">
+            <li className="text-gray-400 font-bold">
+              <img className='w-6' src={s1} alt="" />
+            </li>
+            <li className="text-gray-400 font-bold">
+              <img className='w-6' src={c1} alt="" />
+            </li>
             <li className="text-gray-400 font-bold">Search</li>
           </ol>
         </div>
