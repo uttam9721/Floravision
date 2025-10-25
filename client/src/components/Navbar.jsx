@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import l1 from '../assets/logo.png';
 import s1 from '../assets/search.png';
 import c1 from '../assets/cart.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
       
         <div className="flex items-center gap-2 mb-3 md:mb-0">
           <img className="w-10 sm:w-12" src={l1} alt="logo_img" />
-          <p className="text-xl sm:text-2xl font-bold text-gray-400">FloraVision.</p>
+          <Link to={'/'} className="text-xl sm:text-2xl font-bold text-gray-400">FloraVision.</Link>
         </div>
 
         <div className="md:hidden">
@@ -23,16 +24,17 @@ const Navbar = () => {
             {menuOpen ? '✖' : '☰'}
           </button>
         </div>
+
         <div
           className={`w-full md:w-auto ${
             menuOpen ? 'block' : 'hidden'
           } md:block`}
         >
           <ol className="flex flex-col md:flex-row flex-wrap justify-center gap-4 sm:gap-6 text-sm sm:text-base mt-3 md:mt-0">
-            <li className="cursor-pointer font-bold text-gray-400">Home</li>
-            <li className="cursor-pointer font-bold text-gray-400">Plants Type</li>
+            <Link to={'/'} className="cursor-pointer font-bold text-gray-400">Home</Link>
+            <Link to={'/plants'} className="cursor-pointer font-bold text-gray-400">Plants Type</Link>
             <li className="cursor-pointer font-bold text-gray-400">More</li>
-            <li className="cursor-pointer font-bold text-gray-400">Contact</li>
+            <Link to={'/footer'} className="cursor-pointer font-bold text-gray-400">Contact</Link>
           </ol>
         </div>
 

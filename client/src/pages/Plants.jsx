@@ -5,7 +5,7 @@ import A1 from '../assets/Aglaonema.png'
 import P1 from '../assets/Plantain.png'
 import c1 from '../assets/cactus.png'
 import s1 from '../assets/swiss.png'
-const Cart = () => {
+const Plants = () => {
   return (
     <div className='bg-[#1B2316]'>
     <h1 className='text-center text-2xl font-bold text-white p-18'>Our Top Selling plants</h1>
@@ -108,4 +108,4 @@ const Cart = () => {
   )
 }
 
-export default Cart
+export default Plants

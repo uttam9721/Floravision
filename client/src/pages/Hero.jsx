@@ -3,46 +3,18 @@ import heroImg from '../assets/Hero.png'
 import hcart from '../assets/Hcart.png'
 import p1 from '../assets/Polygon 2.png'
 import a1 from '../assets/Aglaonema.png'
-// import Navbar from './../components/Navbar';
+import c1 from '../assets/cart.png'
+import s1 from '../assets/shali.png'
 
 const Hero = () => {
   return (
     <>
-      {/* <Navbar /> */}
       <div 
-        className='w-full h-screen bg-repeat mt-[-73px] bg-cover bg-center'
+        className='w-full h-[1700px] bg-repeat mt-[-73px] bg-cover bg-center'
         style={{ backgroundImage: `url(${heroImg})` }}
       >
-        {/* <div className='flex items-center justify-between'>
-          <div className='pt-[300px] w-[500px] ml-10'>
-            <h1 className='text-6xl text-[#C9CAC7] font-bold'>Earth’s Exhale</h1> 
-<p className='text-[#C9CAC7]'>"Earth Exhale" symbolizes the purity and vitality of the Earth's natural environment and its essential role in sustaining life.
-Buy Now
-Live Demo...</p>
-<div className='flex items-center gap-2.5'>
-  <button className='text-[#C9CAC7] border px-5 py-2 rounded mt-2'>Buy Now</button>
-  <button className='w-10 h-10 text-[#C9CAC7] border px-5 py-2 rounded-full mt-2 ml-2'>
-    <img className='w-2 h-2' src={p1} alt="ploy" />
-  </button>
-  <p className='text-[#C9CAC7]'>Live Demo..</p>
-
-</div>
-          </div>
-          <div>
-            <div className='border w-[300px] border-white justify-center items-center'>
-              <img className='w-[260px] mt-[-70px]' src={a1} alt="" />
-              <div className='text-center'>
-                <h3 className='text-white text-xl font-bold'>Indoor Plant </h3>
-                <h1 className='text-white text-xl font-bold'>Aglaonema  plant</h1>
-                <button className='text-white text-xl font-bold'>Buy Now</button>
-              </div>
-            </div>
-            
-          </div>
-        </div> */}
-        <div className="w-full  flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-20">
+            <div className="w-full  flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-20">
   
-  {/* Left Section */}
   <div className="w-full  md:w-[500px] text-center md:text-left mb-10 md:mb-0">
     <h1 className="text-5xl md:text-6xl text-[#C9CAC7] font-bold mb-4">Earth’s Exhale</h1> 
     <p className="text-[#C9CAC7] mb-6 leading-relaxed">
@@ -72,23 +44,42 @@ Live Demo...</p>
       </button>
     </div>
   </div>
-
 </div>
 
-        {/* <div>
-            <h1>Our Trendy plants</h1>
-            <div className='flex text-center items-center border-2 border-[#4F554B] rounded-4xl mx-30'>
-                <img className='w-[500px]' src={hcart} alt="" />
-                <div className='w-[300px] text-justify'>
-                    <h1  className='text-white font-bold'> For Your Desks Decorations</h1>
-                    <p className='text-white font-bold'>I recently added a beautiful desk decoration plant to my workspace, and it has made such a positive difference!</p>
-                    <h1 className='text-white font-bold'>Rs. 599/-</h1>
-                    <button>Explore </button>
-                    <button>Cart</button>
-                </div>
-            </div>
-            <div></div>
-        </div> */}
+<div className='border w-[400px] -mt-30 ml-15  border-gray-400 rounded-2xl '>
+  <div className='flex gap-3 p-5 justify- items-center'>
+    <img className='w-22 h-22 rounded-full ' src={s1} alt="" />
+    <div>
+      <h1 className='text-white text-2xl'>Ronnie Hamill</h1>
+      <p className="text-yellow-400 text-sm">★★★★★</p>
+    </div>
+   
+  </div>
+   <p className=' p-5 text-[#C9CAC7] w-[350px]'>I can't express how thrilled I am with my new natural plants! They bring such a fresh and vibrant energy to my home.</p>
+</div>
+        <div className='mt-20 gap-[30px]'>
+  <h1 className='text-center mb-20 text-white text-2xl font-bold'>Our Trendy plants</h1>
+
+  <div className='flex flex-col sm:flex-col md:flex-row text-center items-center border-2 border-[#4F554B] rounded-4xl mx-5 sm:mx-5 md:mx-30'>
+    <img className='w-full sm:w-full md:w-[500px] -mt-10 sm:-mt-5 md:-mt-30' src={hcart} alt="" />
+
+    <div className='w-full sm:w-full md:w-[550px] text-justify p-5'>
+      <h1 className='text-white font-bold text-2xl'>For Your Desks Decorations</h1>
+      <p className='text-white'>
+        I recently added a beautiful desk decoration plant to my workspace, and it has made such a positive difference!
+      </p>
+      <h1 className='text-white font-bold'>Rs. 599/-</h1>
+      <div className='flex gap-3 mt-3 items-center'>
+        <button className='text-[#C9CAC7] border px-5 py-2 rounded-xl'>Explore</button>
+        <button>
+          <img className='w-10 sm:w-8' src={c1} alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div></div>
+</div>
       </div>
     </>
   )
